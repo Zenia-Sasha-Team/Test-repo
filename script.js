@@ -58,5 +58,10 @@
 
                 // Task 2 - Giving the right name
 
-let Earth = "Земля";
-let currentUserName = "Zenia";
+// let Earth = "Земля";
+// let currentUserName = "Zenia";
+
+                // Task 3 - Uppercase const
+
+// const BIRTHDAY = '19.12.1989';
+// const age = someCode(BIRTHDAY);
