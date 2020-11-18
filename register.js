@@ -1,4 +1,3 @@
-function register(login, password) {
-  return "Account was register" + password + "  " + login;
+function register(login,password) {
+ return "Account was registered" + password + "" + login;
 }
-
