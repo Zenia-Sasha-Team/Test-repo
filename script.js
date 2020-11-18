@@ -27,6 +27,7 @@
 // message = hello;
 // alert(hello);
 // alert(message);
+aler(hello);
 
 // let userName;
 // let test123;
@@ -124,3 +125,4 @@
 
 let nameUser = prompt('What is your name?');
 alert(`Your name is ${nameUser}`);
+
