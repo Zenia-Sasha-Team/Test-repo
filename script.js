@@ -65,3 +65,62 @@
 
 // const BIRTHDAY = '19.12.1989';
 // const age = someCode(BIRTHDAY);
+
+// let n = 123;
+// n = 12.345;
+// alert(n);
+
+// alert(1/0);
+// alert("no number"/2);
+// const bigInt = 1234567890323423421352346256n;
+// alert(bigInt);
+
+// let str = "Hi";
+// let str2 = 'Single quotes are ok too';
+// let phrase = `Can embed another ${str}`;
+// alert(str);
+// alert(str2);
+// alert(phrase);
+
+// let name = "Zenia";
+// alert(`Hi, ${name}!`);
+// alert(`result: ${1 + 2}`);
+
+// let nameFieldChecked = true; //да, поле отмечено
+// let ageFieldChecked = false; //нет, поле не отмечено
+
+// let isGreater = 4 > 1;
+// alert(isGreater);
+
+// let age = null //значение переменно неизвестно
+
+// typeof undefined // "undefined"
+// typeof 0 // "number"
+// typeof 10n // "bigint"
+// typeof true // "boolean"
+// typeof Symbol("id") // "symbol";
+// typeof Math // "object"
+// typeof null // "object"
+// typeof alert // "function"
+
+ //                       Task - String quotes
+
+// let name = "Zenia";
+// alert(`hello ${1}`) // "hello 1"
+// alert(`hello ${"name"}`); // "hello name"
+// alert(`hello ${name}`); // "hello Zenia"
+
+//result = prompt(title, [default]);
+
+//  let age = prompt('How old are you ?', 100);
+//   alert(`Тебе  ${age} лет`);
+
+// result = confirm(question);
+
+// let isBoss = confirm("Ты здесь главный?");
+// alert(isBoss);
+
+                        // Task -  A simple page
+
+let nameUser = prompt('What is your name?');
+alert(`Your name is ${nameUser}`);
