@@ -122,5 +122,13 @@
 
                         // Task -  A simple page
 
-let nameUser = prompt('What is your name?');
-alert(`Your name is ${nameUser}`);
+// let nameUser = prompt('What is your name?');
+// alert(`Your name is ${nameUser}`);
+
+//             JS Basics [module 2] - pt.2.7 - 2.12 !!!!!!!
+
+let value = true;
+alert (typeof value);
+
+value = String(value);
+alert(typeof value);
