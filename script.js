@@ -175,7 +175,93 @@
 // let oranges = "3";
 // alert(+apples + +oranges);
 
-let n = 2;
-n = n + 5;
-n = n * 2;
-alert(n);
+// let n = 2;
+// n = n + 5; /// n += 5;
+// n = n * 2; /// n *= 2;
+// alert(n);
+
+// let counter = 2;
+// counter--;
+// alert(counter);
+
+// let counter = 1;
+// let a = counter++;
+// alert(a);
+
+// let counter = 1;
+// alert(2 * ++counter);
+
+//                             Task 2.8
+
+// let a = 1, b = 1;
+// let c = ++a;
+// let d = b++;
+
+// alert(c);
+// alert(d);
+
+// let a = 2;
+// let x = 1 + (a *= 2);
+
+// alert(a); // 4
+// alert(x); // 5
+
+
+// let a = "" + 1 + 0;   // 10
+// let b = "" - 1 + 0;   // -1
+// let c = true + false; // 1
+// let d = 6 / "3";      // 2
+// let e = "2" * "3";    // 6
+// let f = 4 + 5 + "px"; // 9px
+// let g =  "$" + 4 + 5; // $45
+// let h = "4" - 2;      // 2
+// let i = "4px" - 2;    // Nan
+// let j= 7 / 0;         // infinity
+// let k = " -9 " + 5;   // -9 5 
+// let l = " -9 " - 5;   // -14
+// let m = null + 1;     // 1
+// let n = undefined + 1;// Nan
+// let o = " \t\n" - 2;  // -2
+
+// alert(a);
+// alert(b);
+// alert(c);
+// alert(d);
+// alert(e);
+// alert(f);
+// alert(g);
+// alert(h);
+// alert(i);
+// alert(j);
+// alert(k);
+// alert(l);
+// alert(m);
+// alert(n);
+// alert(o);
+
+
+// alert(2 > 1);
+// alert(2 == 1);
+// alert(2 !=1 );
+
+// alert(true == 1);   //true
+// alert(false == 0);  //true
+
+// alert(0 == false); //true
+// alert(0 === false); //false
+
+// alert(null > 0); //false
+// alert(null == 0) //fasle
+// alert(null >= 0) //true
+
+                        // Task
+
+alert(5 > 4);                   // true
+alert("ананас" > "яблоко");     // false
+alert("2" > "12");              // true
+alert(undefined == null);       // true
+alert(undefined === null);      // false
+alert(null == "\n0\n");         // false
+alert(null === +"\n0\n");       // false
+
+
