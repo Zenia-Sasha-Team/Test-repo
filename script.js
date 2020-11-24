@@ -122,5 +122,219 @@
 
                         // Task -  A simple page
 
-let nameUser = prompt('What is your name?');
-alert(`Your name is ${nameUser}`);
+// let nameUser = prompt('What is your name?');
+// alert(`Your name is ${nameUser}`);
+
+//             JS Basics [module 2] - pt.2.7 - 2.12 !!!!!!!
+
+// let value = true;
+// alert (typeof value);
+
+// value = String(value);
+// alert(typeof value);
+
+// alert(6 / 2);  
+
+// let str = "123";
+// alert(typeof str);
+
+// let num = Number(str);
+// alert(typeof num);
+
+// let age = Number("любая строка");
+// alert(age);
+
+// alert(Number("   123   "));
+// alert(Number("123z"));
+// alert(Number(true));
+// alert(Number(false));
+
+// alert(Boolean(1));
+// alert(Boolean(0));
+
+// alert(Boolean("hi"));
+// alert(Boolean(""));
+
+// let x = 1;
+// x = -x;
+// alert(x);
+
+
+// let x = 144;
+// alert( x ** (1/2));
+// // alert(x % y);
+
+// let s = "my " + "string";
+// alert(s);
+
+// let x = -3;
+// alert(+x);
+
+
+// let apples = "12";
+// let oranges = "3";
+// alert(+apples + +oranges);
+
+// let n = 2;
+// n = n + 5; /// n += 5;
+// n = n * 2; /// n *= 2;
+// alert(n);
+
+// let counter = 2;
+// counter--;
+// alert(counter);
+
+// let counter = 1;
+// let a = counter++;
+// alert(a);
+
+// let counter = 1;
+// alert(2 * ++counter);
+
+//                             Task 2.8
+
+// let a = 1, b = 1;
+// let c = ++a;
+// let d = b++;
+
+// alert(c);
+// alert(d);
+
+// let a = 2;
+// let x = 1 + (a *= 2);
+
+// alert(a); // 4
+// alert(x); // 5
+
+
+// let a = "" + 1 + 0;   // 10
+// let b = "" - 1 + 0;   // -1
+// let c = true + false; // 1
+// let d = 6 / "3";      // 2
+// let e = "2" * "3";    // 6
+// let f = 4 + 5 + "px"; // 9px
+// let g =  "$" + 4 + 5; // $45
+// let h = "4" - 2;      // 2
+// let i = "4px" - 2;    // Nan
+// let j= 7 / 0;         // infinity
+// let k = " -9 " + 5;   // -9 5 
+// let l = " -9 " - 5;   // -14
+// let m = null + 1;     // 1
+// let n = undefined + 1;// Nan
+// let o = " \t\n" - 2;  // -2
+
+// alert(a);
+// alert(b);
+// alert(c);
+// alert(d);
+// alert(e);
+// alert(f);
+// alert(g);
+// alert(h);
+// alert(i);
+// alert(j);
+// alert(k);
+// alert(l);
+// alert(m);
+// alert(n);
+// alert(o);
+
+
+// alert(2 > 1);
+// alert(2 == 1);
+// alert(2 !=1 );
+
+// alert(true == 1);   //true
+// alert(false == 0);  //true
+
+// alert(0 == false); //true
+// alert(0 === false); //false
+
+// alert(null > 0); //false
+// alert(null == 0) //fasle
+// alert(null >= 0) //true
+
+                        // Task
+
+// alert(5 > 4);                   // true
+// alert("ананас" > "яблоко");     // false
+// alert("2" > "12");              // true
+// alert(undefined == null);       // true
+// alert(undefined === null);      // false
+// alert(null == "\n0\n");         // false
+// alert(null === +"\n0\n");       // false
+
+
+// let year = prompt('В каком году была опубликована что-то там?','');
+// if (year == 2015) {
+//     alert("Вы правы");
+//     alert("вы такой умный !");
+// } 
+// else {
+//     alert("А вот и не правильно!")
+// }
+
+// let year = prompt('В каком году была опубликована что-то там?','');
+// if (year < 2015) {
+//     alert("Это слишком рано !");
+// } else 
+// if (year > 2015) {
+//     alert("Это слишком поздно!")
+// }
+// else {
+//     alert("Все верно!")
+// }
+
+
+// let accessAllowed;
+// let age = prompt("How old are you","");
+// if (age > 18) {
+//     accessAllowed = true;
+// } else {
+//     accessAllowed = false;
+// }
+// alert(accessAllowed);
+
+
+// let age = prompt("How old are you","");
+
+// let accessAllowed = (age > 18) ? true : false;
+// alert(accessAllowed);
+//___________________________________________________
+
+// let age = prompt("Возраст?", 18);
+// let message = (age < 3) ? "Здравствуй, малыш!" : 
+//     (age < 18) ? "Привет!" :
+//     (age < 100) ? "Здравствуйте!" :  "Какой необычный возраст!";
+// alert(message);
+//___________________________________________________
+
+
+                    // Tasks
+
+// Task 1:
+
+// // if ('1') {
+// //     alert('hi');
+// // }
+
+// Task 2:
+// let nameJavaScript = prompt("Какаое 'официальное' название Javascript?","");
+// if (nameJavaScript == "ECMAScript") {
+//     alert("Верно!");
+// } else {
+//     alert("Не знаете? 'ECMASCRIPT!'");
+// };
+
+// Task 3:
+
+// let result = (a + b < 4) ? "Мало" : "Много";
+
+
+//Task 4
+
+let message = (login == 'Сотрудник') ? 'Привет' :
+(login == 'Директор') ? 'Здравствуйте' : 
+(login == '') ? '' : '';
+
+
