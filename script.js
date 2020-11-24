@@ -256,12 +256,85 @@
 
                         // Task
 
-alert(5 > 4);                   // true
-alert("ананас" > "яблоко");     // false
-alert("2" > "12");              // true
-alert(undefined == null);       // true
-alert(undefined === null);      // false
-alert(null == "\n0\n");         // false
-alert(null === +"\n0\n");       // false
+// alert(5 > 4);                   // true
+// alert("ананас" > "яблоко");     // false
+// alert("2" > "12");              // true
+// alert(undefined == null);       // true
+// alert(undefined === null);      // false
+// alert(null == "\n0\n");         // false
+// alert(null === +"\n0\n");       // false
+
+
+// let year = prompt('В каком году была опубликована что-то там?','');
+// if (year == 2015) {
+//     alert("Вы правы");
+//     alert("вы такой умный !");
+// } 
+// else {
+//     alert("А вот и не правильно!")
+// }
+
+// let year = prompt('В каком году была опубликована что-то там?','');
+// if (year < 2015) {
+//     alert("Это слишком рано !");
+// } else 
+// if (year > 2015) {
+//     alert("Это слишком поздно!")
+// }
+// else {
+//     alert("Все верно!")
+// }
+
+
+// let accessAllowed;
+// let age = prompt("How old are you","");
+// if (age > 18) {
+//     accessAllowed = true;
+// } else {
+//     accessAllowed = false;
+// }
+// alert(accessAllowed);
+
+
+// let age = prompt("How old are you","");
+
+// let accessAllowed = (age > 18) ? true : false;
+// alert(accessAllowed);
+//___________________________________________________
+
+// let age = prompt("Возраст?", 18);
+// let message = (age < 3) ? "Здравствуй, малыш!" : 
+//     (age < 18) ? "Привет!" :
+//     (age < 100) ? "Здравствуйте!" :  "Какой необычный возраст!";
+// alert(message);
+//___________________________________________________
+
+
+                    // Tasks
+
+// Task 1:
+
+// // if ('1') {
+// //     alert('hi');
+// // }
+
+// Task 2:
+// let nameJavaScript = prompt("Какаое 'официальное' название Javascript?","");
+// if (nameJavaScript == "ECMAScript") {
+//     alert("Верно!");
+// } else {
+//     alert("Не знаете? 'ECMASCRIPT!'");
+// };
+
+// Task 3:
+
+// let result = (a + b < 4) ? "Мало" : "Много";
+
+
+//Task 4
+
+let message = (login == 'Сотрудник') ? 'Привет' :
+(login == 'Директор') ? 'Здравствуйте' : 
+(login == '') ? '' : '';
 
 
