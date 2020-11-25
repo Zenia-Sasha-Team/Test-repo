@@ -520,5 +520,55 @@
 //   }
     
 
+//              2.12 Оператор обьединения с null и "??"
+
+// result = a ?? b;
+// result = (a !== null && a !== undefined) ? a : b;
 
 
+// let user;
+// alert(user ?? "Аноним"); // Аноним
+
+// let user = 'Ivan';       // любое значение, кроме null/undefined
+// alert(user ?? "Anonim"); // Ivan
+
+//   let firstName = null;
+//   let lastName = null;
+//   let nickName = "Суперкодер";
+//   // показывает первое определённое значение:
+//   alert(firstName ?? lastName ?? nickName ?? "Аноним"); // Суперкодер
+
+
+//      Сравнение с || (или)
+
+//   let firstName = null;
+//   let lastName = null;
+//   let nickName = "Суперкодер";
+//   показывает первое истинное значение!!!
+//   alert(firstName || lastName || nickName || "Аноним"); // Суперкодер
+
+// Важное различие между ними заключается в том, что:
+// || возвращает первое истинное значение.
+// ?? возвращает первое определённое значение.
+
+// Оператор || не различает false, 0, пустую строку "" и null/undefined
+
+// let height = 0;
+// alert(height || 100); // 100
+// alert(height ?? 100); // 0
+
+// таблица Приоритетов https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#Table
+
+// let height = null;
+// let width = null;
+// // важно использовать круглые скобки
+// let area = (height ?? 100) * (width ?? 50);
+// alert(area); // 5000
+
+// //Про оператор ??= ещё можно было б написать.
+// //В выражении (x ??= y) в x перейдёт значение от y, если x - это null или undefined.
+let city = { name: 'Rostov', population: 1100000 };
+city.population ??= 200000;
+console.log(city.population); // 1100000, а не 200000
+city.founded ??= 1749;
+console.log(city.founded); // 1749
