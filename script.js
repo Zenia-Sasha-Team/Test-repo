@@ -339,7 +339,7 @@
  
                              //   2.11
 
- //                            result = a || b;
+ //                            result = a || b; //  или
 
 // alert(true || true);  //true
 // alert(false || true); //true
@@ -377,5 +377,148 @@
 // false || (x = 1);
 // alert(x); // 1
 
-//                             result = a && b;      
+//                             result = a && b;    // и   
+
+//              И -  возвращает первое ложное значение, 
+//          а ИЛИ –  первое истинное
+
+// alert(true && true);  // true
+// alert(false && true); // false
+// alert(true && false); // false
+// alert(false && false); //false
+
+// let hour = 12;
+// let minute = 30;
+// if(hour == 12 && minute == 30) {
+//     alert('The time is 12:30');
+// }
+
+// Если первый операнд истинный,
+// И возвращает второй:
+// alert( 1 && 0 ); // 0
+// alert( 1 && 5 ); // 5
+
+// Если первый операнд ложный,
+// И возвращает его. Второй операнд игнорируется
+// alert( null && 5 ); // null
+// alert( 0 && "no matter what" ); // 0
+
+// alert(1 && 2 && null && 3); // null
+// alert(1 && 2 && 3); // 3
+
+//Приоритет оператора И && больше, чем ИЛИ ||, так что он выполняется раньше.
+
+// let x = 1;
+// (x > 0) && alert('Greater than zero');
+
+// let x = 1;
+// if (x > 0) {
+//     alert('Greater than zero');
+// }
+
+//                          result = !value; // не
+
+// alert(!true); //false
+// alert(!0); //true
+
+    // alert( !!"non-empty string" ); // true
+    // alert( !!null ); // false
+
+    // alert( Boolean("non-empty string") ); // true
+    // alert( Boolean(null) ); // false
+
+// то же самое 
+
+//  ! - приоритет, && - потом, а затем - ||
+
+//                          Tasks
+
+// 1. 
+// alert(null || 2 || undefined); // 2
+
+// 2. 
+// alert(alert(1) || 2 || alert(3)); // 1, (потому что alert(1) - undefined), потом 2
+
+// 3.
+// alert(1 && null && 2); //null
+
+// 4.
+// alert(alert(1) && alert(2)); // 1, 
+
+// 5.
+// alert(null || 2 && 3 || 4); //2
+
+// 6.
+// let age = prompt('Введите значение age =','');
+// if (age >= '14' && age <= '90') {
+//     alert(true);
+// } else {
+//     alert(false);
+// }
+
+// 7.
+
+// let age  = prompt('Введите значение age =','');
+// if (age < '14' && age > '90') {
+//     alert(true);
+// } else {
+//     alert(false);
+// }
+
+// let age = prompt('Введите значение age =','');
+// if (!(age >= '14' && age <= '90')) {
+//     alert(true);
+// } else {
+//     alert(false);
+// }
+
+// let age = prompt('Введите значение age =','');
+// if (age < 14 || age > 90) {
+//     alert(true);
+// } else {
+//     alert(false);
+// }
+
+// 8.
+
+// if (-1) alert('first');
+// if (-1 && 0) alert('second');
+// if (null || -1 && 1) alert('third');
+
+    // 9.
+//                          Мой вариант
+
+
+//    let login = prompt('Введите логин','');
+//    let newUser = (login == null) ? alert('Отменено') : 
+//     (login == 'Админ') ? password = prompt('Введите Пароль') : alert('Я вас не знаю');
+
+//    let answer = (password == null) ? 'Отменено' :
+//     (password == 'Я главный') ? 'Здравствуйте!' :  'Неверный пароль';
+//     alert(answer);
+
+
+//                          Решение в теории
+
+//   let userName = prompt("Кто там?", '');
+
+//   if (userName == 'Админ') {
+//      let pass = prompt('Пароль?', '');
+
+//     if (pass == 'Я главный') {
+//       alert( 'Здравствуйте!' );
+//     } else if (pass == '' || pass == null) {
+//       alert( 'Отменено' );
+//     } else {
+//       alert( 'Неверный пароль' );
+//     }
+
+//   } else if (userName == '' || userName == null) {
+//     alert( 'Отменено' );
+//   } else {
+//     alert( "Я вас не знаю" );
+//   }
+    
+
+
 
