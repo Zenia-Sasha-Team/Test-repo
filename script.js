@@ -333,8 +333,579 @@
 
 //Task 4
 
-let message = (login == 'Сотрудник') ? 'Привет' :
-(login == 'Директор') ? 'Здравствуйте' : 
-(login == '') ? '' : '';
+// let message = (login == 'Сотрудник') ? 'Привет' :
+// (login == 'Директор') ? 'Здравствуйте' : 
+// (login == '') ? 'Нет логина' : '';
+ 
+                             //   2.11
+
+ //                            result = a || b; //  или
+
+// alert(true || true);  //true
+// alert(false || true); //true
+// alert(true || false); //true
+// alert(false || false) //false
+
+// let hour = 9;
+// if (hour < 10 || hour > 18) {
+//     alert("Офис закрыт");
+// }
+
+// let hour = 12;
+// let isWeekend = true;
+
+// if (hour < 10 || hour > 18 || isWeekend) {
+//   alert( 'Офис закрыт.' );    // это выходной
+// }
+
+// alert(1 || 0);   //1
+// alert( true || 'no matter what' ); // true
+// alert( null || 1 ); // 1 (первое истинное значение)
+// alert( null || 0 || 1 ); // 1 (первое истинное значение)
+// alert( undefined || null || 0 ); // 0 (поскольку все ложно, возвращается последнее значение)
+
+// let currentUser = null;
+// let defaultUser = "John";
+// let name = currentUser || defaultUser || "unnamed";
+// alert( name ); // выбирается "John" – первое истинное значение
+
+// let x;
+// true || (x = 1);
+// alert(x); // undefined, потому что (x = 1) не вычисляется
+
+// let x;
+// false || (x = 1);
+// alert(x); // 1
+
+//                             result = a && b;    // и   
+
+//              И -  возвращает первое ложное значение, 
+//          а ИЛИ –  первое истинное
+
+// alert(true && true);  // true
+// alert(false && true); // false
+// alert(true && false); // false
+// alert(false && false); //false
+
+// let hour = 12;
+// let minute = 30;
+// if(hour == 12 && minute == 30) {
+//     alert('The time is 12:30');
+// }
+
+// Если первый операнд истинный,
+// И возвращает второй:
+// alert( 1 && 0 ); // 0
+// alert( 1 && 5 ); // 5
+
+// Если первый операнд ложный,
+// И возвращает его. Второй операнд игнорируется
+// alert( null && 5 ); // null
+// alert( 0 && "no matter what" ); // 0
+
+// alert(1 && 2 && null && 3); // null
+// alert(1 && 2 && 3); // 3
+
+//Приоритет оператора И && больше, чем ИЛИ ||, так что он выполняется раньше.
+
+// let x = 1;
+// (x > 0) && alert('Greater than zero');
+
+// let x = 1;
+// if (x > 0) {
+//     alert('Greater than zero');
+// }
+
+//                          result = !value; // не
+
+// alert(!true); //false
+// alert(!0); //true
+
+    // alert( !!"non-empty string" ); // true
+    // alert( !!null ); // false
+
+    // alert( Boolean("non-empty string") ); // true
+    // alert( Boolean(null) ); // false
+
+// то же самое 
+
+//  ! - приоритет, && - потом, а затем - ||
+
+//                          Tasks
+
+// 1. 
+// alert(null || 2 || undefined); // 2
+
+// 2. 
+// alert(alert(1) || 2 || alert(3)); // 1, (потому что alert(1) - undefined), потом 2
+
+// 3.
+// alert(1 && null && 2); //null
+
+// 4.
+// alert(alert(1) && alert(2)); // 1, 
+
+// 5.
+// alert(null || 2 && 3 || 4); //2
+
+// 6.
+// let age = prompt('Введите значение age =','');
+// if (age >= '14' && age <= '90') {
+//     alert(true);
+// } else {
+//     alert(false);
+// }
+
+// 7.
+
+// let age  = prompt('Введите значение age =','');
+// if (age < '14' && age > '90') {
+//     alert(true);
+// } else {
+//     alert(false);
+// }
+
+// let age = prompt('Введите значение age =','');
+// if (!(age >= '14' && age <= '90')) {
+//     alert(true);
+// } else {
+//     alert(false);
+// }
+
+// let age = prompt('Введите значение age =','');
+// if (age < 14 || age > 90) {
+//     alert(true);
+// } else {
+//     alert(false);
+// }
+
+// 8.
+
+// if (-1) alert('first');
+// if (-1 && 0) alert('second');
+// if (null || -1 && 1) alert('third');
+
+    // 9.
+//                          Мой вариант
 
 
+//    let login = prompt('Введите логин','');
+//    let newUser = (login == null) ? alert('Отменено') : 
+//     (login == 'Админ') ? password = prompt('Введите Пароль') : alert('Я вас не знаю');
+
+//    let answer = (password == null) ? 'Отменено' :
+//     (password == 'Я главный') ? 'Здравствуйте!' :  'Неверный пароль';
+//     alert(answer);
+
+
+//                          Решение в теории
+
+//   let userName = prompt("Кто там?", '');
+
+//   if (userName == 'Админ') {
+//      let pass = prompt('Пароль?', '');
+
+//     if (pass == 'Я главный') {
+//       alert( 'Здравствуйте!' );
+//     } else if (pass == '' || pass == null) {
+//       alert( 'Отменено' );
+//     } else {
+//       alert( 'Неверный пароль' );
+//     }
+
+//   } else if (userName == '' || userName == null) {
+//     alert( 'Отменено' );
+//   } else {
+//     alert( "Я вас не знаю" );
+//   }
+    
+
+//              2.12 Оператор обьединения с null и "??"
+
+// result = a ?? b;
+// result = (a !== null && a !== undefined) ? a : b;
+
+
+// let user;
+// alert(user ?? "Аноним"); // Аноним
+
+// let user = 'Ivan';       // любое значение, кроме null/undefined
+// alert(user ?? "Anonim"); // Ivan
+
+//   let firstName = null;
+//   let lastName = null;
+//   let nickName = "Суперкодер";
+//   // показывает первое определённое значение:
+//   alert(firstName ?? lastName ?? nickName ?? "Аноним"); // Суперкодер
+
+
+//      Сравнение с || (или)
+
+//   let firstName = null;
+//   let lastName = null;
+//   let nickName = "Суперкодер";
+//   показывает первое истинное значение!!!
+//   alert(firstName || lastName || nickName || "Аноним"); // Суперкодер
+
+// Важное различие между ними заключается в том, что:
+// || возвращает первое истинное значение.
+// ?? возвращает первое определённое значение.
+
+// Оператор || не различает false, 0, пустую строку "" и null/undefined
+
+// let height = 0;
+// alert(height || 100); // 100
+// alert(height ?? 100); // 0
+
+// таблица Приоритетов https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#Table
+
+// let height = null;
+// let width = null;
+// // важно использовать круглые скобки
+// let area = (height ?? 100) * (width ?? 50);
+// alert(area); // 5000
+
+// //Про оператор ??= ещё можно было б написать.
+// //В выражении (x ??= y) в x перейдёт значение от y, если x - это null или undefined.
+// let city = { name: 'Rostov', population: 1100000 };
+// city.population ??= 200000;
+// console.log(city.population); // 1100000, а не 200000
+// city.founded ??= 1749;
+// console.log(city.founded); // 1749
+
+
+
+// Для многократного повторения одного участка кода предусмотрены циклы.
+
+//                       Цикл «while»
+
+// while (condition) {
+//     // код
+//     // также называемый "Телом кода"
+// }
+
+// let i = 0;
+// while (i < 3) {
+//     alert(i);
+//     i++
+// }
+
+// let i = 3;
+// //   while (i) – более краткий вариант while (i != 0)
+// while (i) {  // когда i будет равно 0 условие остановится
+//     alert( i );
+//     i--;
+// }
+
+// let i = 3;
+// while (i) alert(i--);
+
+//                  Цикл «do…while»
+
+// do {
+//     // тело цикла
+// } while (condition);
+
+// let i = 0;
+// do {
+//     alert(i);
+//     i++;
+// } while (i < 3);
+
+//                  Цикл «for»
+
+// for (начало; условие; шаг) {
+//     // ... тело цикла ...
+//   }
+
+// for (let i = 0; i < 3; i++) {
+//     alert(i);
+// }
+
+// Выполнить *начало*
+// → (Если *условие* == true → Выполнить *тело*, Выполнить *шаг*)
+// → (Если *условие* == true → Выполнить *тело*, Выполнить *шаг*)
+// → (Если *условие* == true → Выполнить *тело*, Выполнить *шаг*)
+// → ...
+
+// // for (let i = 0; i < 3; i++) alert(i)
+
+// // Выполнить начало
+// let i = 0;
+// // Если условие == true → Выполнить тело, Выполнить шаг
+// if (i < 3) { alert(i); i++ }
+// // Если условие == true → Выполнить тело, Выполнить шаг
+// if (i < 3) { alert(i); i++ }
+// // Если условие == true → Выполнить тело, Выполнить шаг
+// if (i < 3) { alert(i); i++ }
+// // ...конец, потому что теперь i == 3
+
+
+// let i = 0;
+// for (i = 0; i < 3; i++) { // используем существующую переменную
+//   alert(i); // 0, 1, 2
+// }
+// alert(i); // 3, переменная доступна, т.к. была объявлена снаружи цикла
+
+
+// let i = 0; // мы уже имеем объявленную i с присвоенным значением
+// for (; i < 3; i++) { // нет необходимости в "начале"
+//   alert( i ); // 0, 1, 2
+// }
+
+
+// let i = 0;
+// for (; i < 3;) {
+//   alert( i++ );
+// }                   //Это сделает цикл аналогичным while (i < 3).
+
+// for (;;) {
+//     // будет выполняться вечно
+//   }
+
+// let sum = 0;
+// while (true) {
+//     let value = prompt('Введите число','');
+//     if (!value) break; //(*)
+//     sum += value;
+// }
+// alert('Сумма' + sum);
+
+//                   итерация continue
+
+// Директива continue – «облегчённая версия» break
+
+// for (let i = 0; i < 10; i++) {
+//     // если true, пропустить оставшуюся часть тела цикла
+//     if (i % 2 == 0) continue;
+//     alert(i); // 1, затем 3, 5, 7, 9
+//   }
+
+//   for (let i = 0; i < 10; i++) {
+//     if (i % 2) {
+//       alert( i );
+//     }
+//   }
+
+
+//                          Метки для break/continue
+
+// labelName: 
+//   for (...) {
+//     ...
+//   }
+
+
+// for (let i = 0; i < 3; i++) {
+//     for (let j = 0; j < 3; j++) {
+//       let input = prompt(`Значение на координатах (${i},${j})`, '');
+//       // Что если мы захотим перейти к Готово (ниже) прямо отсюда?
+//     }
+//   }
+//   alert('Готово!');
+
+//   outer: for (let i = 0; i < 3; i++) {
+//     for (let j = 0; j < 3; j++) {
+//       let input = prompt(`Значение на координатах (${i},${j})`, '');
+//       // если пустая строка или Отмена, то выйти из обоих циклов
+//       if (!input) break outer; // (*)
+//       // сделать что-нибудь со значениями...
+//     }
+//   }
+//   alert('Готово!');
+
+//                      Tasks
+// 1.
+
+// let i = 3;
+// while (i) {
+//     alert( i-- );
+// }
+// // последняя цифра 1 потому что 0 это false
+
+// 2.
+
+// let i = 0;
+// while (++i < 5) alert(i);
+// // 1, 2, 3, 4
+
+// let i = 0;
+// while (i++ < 5) alert(i);
+// //1, 2, 3, 4, 5
+
+// 3.
+
+// for (let i = 0; i < 5; i++) alert(i);
+// //0, 1, 2, 3, 4
+
+// for (let i = 0; i < 5; ++i) alert(i);
+// //0, 1, 2, 3, 4
+
+// 4.
+
+// for ( let i = 0; i <= 10; i++) {
+//     if (i % 2 == 0)
+//     alert(i);
+// }
+// Для проверки на чётность мы здесь используем оператор получения 
+// остатка от деления %
+
+//5.
+
+// for (let i = 0; i < 3; i++) {
+//     alert(`number ${i}!`)
+// }                                      // 0,1,2
+
+// let i = 0;
+// while (i++ < 3) alert(`number ${i}!`)  // 1,2,3
+
+// let i = 0;
+// while (i < 3) {
+//     alert(i);
+//     i++
+// }                                      // 0,1,2
+
+// 6.
+// let i;
+// do {
+//     i = prompt('Введите число больше 1000','')
+// } while (i <= 1000 && i);
+
+// 7.
+
+// let n = 10;
+// nextPrime:
+// for (let i = 2; i <= n; i++) { //для всех i...
+//     for (let j = 2; j < i; j++) {
+//         if (i % j == 0) continue nextPrime; //не подходит, берем следующее
+//     }
+//     alert(i); // простое число
+// }
+
+//                      Конструкция "switch"
+
+//                       Синтаксис
+
+//     switch(x) {
+//     case 'value1':     // if (x === 'value1')
+//       ...
+//       [break]
+//     case 'value2':     // if (x === 'value2')
+//       ...
+//       [break]
+//     default:
+//       ...
+//       [break]
+//   }
+
+//                           Пример
+
+// let a = 2 + 2;
+
+// switch (a) {
+//   case 3:
+//     alert( 'Маловато' );
+//     break;
+//   case 4:
+//     alert( 'В точку!' );
+//     break;
+//   case 5:
+//     alert( 'Перебор' );
+//     break;
+//   default:
+//     alert( "Нет таких значений" );
+// }
+
+// let a = 2 + 2;
+// switch (a) {
+//   case 3:
+//     alert( 'Маловато' );
+//   case 4:
+//     alert( 'В точку!' );
+//   case 5:
+//     alert( 'Перебор' );
+//   default:
+//     alert( "Нет таких значений" );
+// }
+
+
+// let a = "1";
+// let b = 0;
+// switch (+a) {
+//   case b + 1:
+//     alert("Выполнится, т.к. значением +a будет 1, что в точности равно b+1");
+//     break;
+//   default:
+//     alert("Это не выполнится");
+// }
+
+
+// let a = 1;
+// switch (a) {
+//   case 4:
+//     alert('Правильно!');
+//     break;
+//   case 3: // (*) группируем оба case
+//   case 5:
+//          alert('Неправильно!');
+//           alert("Может вам посетить урок математики?");
+//          break;
+//   default:
+//     alert('Результат выглядит странновато. Честно.');
+// }
+
+
+// let arg = prompt("Введите число?");
+// switch (arg) {
+//   case '0':
+//   case '1':
+//          alert( 'Один или ноль' );
+//          break;
+//   case '2':
+//          alert( 'Два' );
+//          break;
+//   case 3:
+//          alert( 'Никогда не выполнится!' );
+//          break;
+//   default:
+//          alert( 'Неизвестное значение' );
+// }
+
+
+//                          Task
+
+// 1.
+// if (browser === 'Edge') {
+//         alert("You've got the Edge");
+// } else if (browser == 'Chrome'
+//     || browser == 'Firefox' 
+//     || browser == 'Safari' 
+//     || browser == 'Opera') {
+//     alert('Okay we support these browsers too');
+// } else {
+//     alert ('We hope this page looks ok!');
+// }
+
+
+// 2.
+// let num = +prompt('Введите число между 0 и 3','');
+// switch (num) {
+//     case 0:
+//         alert('Вы ввели число 0');
+//         break;
+//     case '1':
+//         alert('Вы ввели число 1');
+//         break
+//     case '2':
+//     case '3':
+//         alert('Вы ввели число 2, а может и 3');
+//         break 
+//     default:
+//         alert('неизвестное значение')
+// }
+
+// + перед чем-либо, например prompt:
+//То что данные введённые в prompt преобразуются в тип Number.
+// !!выражение - преобразовать к Boolean типу.
+// аналог с одним ! - преобразовать данные к Boolean и инвертировать (например: !0 = true).
+// +'10' + +'10' - сложить строки как числа (в этом примере ответ будет 20).
