@@ -909,3 +909,250 @@
 // !!выражение - преобразовать к Boolean типу.
 // аналог с одним ! - преобразовать данные к Boolean и инвертировать (например: !0 = true).
 // +'10' + +'10' - сложить строки как числа (в этом примере ответ будет 20).
+
+
+//                      Функции
+
+// function showMessage() {
+//     alert( 'Всем привет!' );
+//   }
+  
+// function имя (параметры) {
+//     ...тело...
+// }
+
+// function showMessage() {
+//     alert('Всем привет!');
+// }
+
+// showMessage();
+// showMessage();
+
+// function showMessage() {
+//     let message = 'Привет, я JavaScript!';
+//     alert(message);
+// }
+// showMessage();
+
+
+// let userName = 'Вася';
+// function showMessage() {
+//     let message = 'Привет, ' + userName;
+//     alert(message);
+// }
+// showMessage();
+
+// let userName = 'Вася';
+// function showMessage() {
+//     userName = 'Петя';
+//     let message = 'Привет, ' + userName;
+//     alert(message);
+// }
+// alert(userName);
+// showMessage();
+// alert(userName);
+
+// let userName = 'Vasya';
+// function showMessage () {
+//     let userName = 'Petya';
+//     let message = 'Privet, ' + userName;
+//     alert(message);
+// }
+// showMessage();
+// alert(userName);
+
+
+//                      Параметры
+
+
+// function showMessage (from, text) {
+//     alert(from + ': ' + text);
+// }
+// showMessage('Аня', 'Привет!');
+// showMessage('Аня', 'как дела?');
+
+
+// function showMessage(from, text) {
+//     from = '*' + from + '*';
+//     alert(from + ': ' + text);
+// }
+// let from = 'Аня';
+// showMessage(from, 'Привет');
+
+
+//                      Параметры по умолчанию
+
+// function showMessage(from, text = 'текст не добавлен') {
+//     alert(from + ': ' + text);
+// }
+// showMessage('Аня');
+
+// ПРОВЕРКА НА UNDEFINED:
+
+    // function showMessage(from, text) {
+    //     if (text === undefined) {
+    //         text = 'текст не добавлен';
+    //     }
+    //     alert(from + ': ' + text);
+    // }
+    // showMessage();
+
+// или с помощью оператора  ||:
+
+    // function showMessage(from, text) {
+    //     text = text || 'текст не добавлен';
+    //     ...
+    // }
+
+//                          Возврат значения
+
+
+// function sum(a, b) {
+//     return a + b;
+// }
+// let result = sum(1, 2);
+// alert(result);             //3
+
+// function checkAge(age) {
+//     if (age > 18) {
+//         return true;
+//     } else {
+//         return confirm('А родители разрешили?');
+//     }
+// }
+// let age  = prompt('Сколько Вам лет?', 18);
+// if ( checkAge(age) ) {
+//     alert('доступ получен');
+// } else {
+//     alert('Доступ закрыт');
+// }
+
+
+// function showMovie(age) {
+//     if ( !checkAge(age) ) {
+//       return;
+//     }
+//     alert( "Вам показывается кино" ); // (*)
+//     // ...
+//   }
+// showMovie();
+
+
+// Результат функции с пустым return или без него – undefined
+// Если функция не возвращает значения, это всё равно, как если бы она возвращала undefined:
+//
+//         function doNothing() { 
+//         /* пусто */ 
+//           }
+//         alert( doNothing() === undefined ); // true
+//
+// Пустой return аналогичен return undefined:
+//
+//         function doNothing() {
+//            return;
+//           }
+//          alert( doNothing() === undefined ); // true
+
+
+
+//                              Выбор имени функции
+
+
+// Функции, начинающиеся с..
+// "get.." - возвращают значение,
+// "calc.." - что-то вычисляют,
+// "create.." - что-то создают,
+// "check.." - что-то прверяют и возвращают логичесское значение, и т.д.
+
+// showMessage(..)     // показывает сообщение
+// getAge(..)          // возвращает возраст (в каком либо значении)
+// calcSum(..)         // вычисляет сумму и возвращает результат
+// createForm(..)      // создаёт форму (и обычно возвращает её)
+// checkPermission(..) // проверяет доступ, возвращая true/false
+
+
+// function showPrimes(n) {
+//     for (let i = 2; i < n; i++) {
+//       if (!isPrime(i)) continue;
+//       alert(i);  // простое
+//     }
+//   }
+//   function isPrime(n) {
+//     for (let i = 2; i < n; i++) {
+//       if ( n % i == 0) return false;
+//     }
+//     return true;
+//   }
+
+
+//                              Tasks
+
+// 1.
+
+// function checkAge(age) {
+//     if (age > 18) {
+//         return true;
+//     }
+//         return confirm('Родители разрешили?');
+// }
+// checkAge();
+
+
+// 2.
+
+// //Переписать функцию:
+
+// function checkAge(age) {
+//     if (age > 18) {
+//         return true;
+//     } else {
+//         return confirm('Родители разрешили?')
+//     }
+// }
+
+// // 2.1 (используя оператор ?)
+
+// function checkAge(age) {
+//     return (age > 18) ? true : confirm('Родители разрешили?')
+// }
+
+// // 2.2 (используя оператор  ||)
+
+// function checkAge(age) {
+//     return (age > 18) || confirm('Родители разрешили?');
+// }
+
+
+// 3. 
+// // 3.1
+// function min(a, b) {
+//     if (a < b) {
+//         return a;
+//     } else {
+//         return b;
+//     }
+// }
+
+// // 3.2
+// function min(a, b) {
+//     return (a < b) ? a : b;
+// }
+
+
+// 4 Функция pow(x,n)
+let x = prompt('Введите значение Х','');
+let n = prompt('Введите значение n','');
+function pow(x, n) {
+    let result = x;
+    for (let i = 1; i < n; i++) {
+        result = result * x;
+    }
+    return result;
+}
+if (n < 1) {
+    alert ('степень не поддерживается');
+} else {
+    alert(pow(x, n));
+}
+
+
