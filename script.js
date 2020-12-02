@@ -1213,14 +1213,66 @@
 //   );
 
 
-let age = prompt('How old are you?','');
-let welcome;
-if (age < 18) {
-    welcome = function() {
-        alert('Hi');
-    };} 
-    else {
-    welcome = function() {
-        alert('Hellllo');
-    };}
-welcome();
+// let age = prompt('How old are you?','');
+// let welcome;
+// if (age < 18) {
+//     welcome = function() {
+//         alert('Hi');
+//     };} 
+//     else {
+//     welcome = function() {
+//         alert('Hellllo');
+//     };}
+// welcome();
+
+
+
+//                  Функции - стрелки, основы ! 
+//                     (arrow functions)
+
+
+
+//    let func = (arg1, arg2, ...argN) => expression
+//          иначе: 
+//    let func = function(arg1, arg2, ...argN) {
+//    return expression;}
+
+
+
+// let sum = (a, b) => a + b;
+// alert(sum(1, 2));
+//          иначе:
+
+// let sum = function(a, b) {
+//     return a + b;
+// }
+
+
+// Если нет аргументов, указываются пустые круглые скобки:
+//  let sayHi = () => alert("Hello!");
+//  sayHi();
+
+// like Function Expression:
+// let age = prompt("How old are you?","");
+// let welcome = (age < 18) ? 
+//     () => alert('Hi') : 
+//     () => alert('Helllllo!');
+// welcome();
+
+
+// let sum = (a, b) => {
+//     let result = a + b;
+//     return result;
+// }
+// alert(sum(1, 2));
+
+
+function ask(question, yes, no) {
+    if (confirm(question)) yes()
+    else no();
+}
+ask (
+    'Вы согласны?',
+    () => {alert("Вы согласились");},
+    () => {alert("Вы отменили выполнение");}
+);
