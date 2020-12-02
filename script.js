@@ -1140,19 +1140,87 @@
 
 
 // 4 Функция pow(x,n)
-let x = prompt('Введите значение Х','');
-let n = prompt('Введите значение n','');
-function pow(x, n) {
-    let result = x;
-    for (let i = 1; i < n; i++) {
-        result = result * x;
-    }
-    return result;
-}
-if (n < 1) {
-    alert ('степень не поддерживается');
-} else {
-    alert(pow(x, n));
-}
+// let x = prompt('Введите значение Х','');
+// let n = prompt('Введите значение n','');
+// function pow(x, n) {
+//     let result = x;
+//     for (let i = 1; i < n; i++) {
+//         result = result * x;
+//     }
+//     return result;
+// }
+// if (n < 1) {
+//     alert ('степень не поддерживается');
+// } else {
+//     alert(pow(x, n));
+// }
 
 
+
+//                      Function Expression
+//                      (функциональное выражение)
+
+// function sayHi() {
+//     alert('Privet');
+// }                      // function declaration (обьявление функции)
+
+// let sayHi = function() {
+//     alert('Privet');
+// };
+
+// function sayHi() {   // (1) создаём
+//     alert( "Privet" );
+//   }
+//   let func = sayHi;    // (2) копируем
+//   func(); // Привет    // (3) вызываем копию (работает)!
+//   sayHi(); // Привет   //     прежняя тоже работает (почему бы нет)
+
+
+//                      Функции-"колбэки"
+
+// Давайте напишем функцию ask(question, yes, no) с тремя параметрами:
+
+// question - Текст вопроса
+// yes - Функция, которая будет вызываться, если ответ будет «Yes»
+// no -Функция, которая будет вызываться, если ответ будет «No»
+
+
+// 'use strict';
+// function ask(question, yes, no) {
+//     if (confirm(question)) yes()
+//     else no();
+// }
+// function showOk() {
+//     alert('Вы согласны.');
+// }
+// function showCancel() {
+//     alert('Вы отменили выполнение.');
+// }
+// //// использование: функции showOk, showCancel 
+// //// передаются в качестве аргументов ask
+// ask("Вы согласны?", showOk, showCancel);
+
+//                          иначе:
+
+// function ask(question, yes, no) {
+//     if (confirm(question)) yes()
+//     else no();
+//   }
+//   ask(
+//     "Вы согласны?",
+//     function() { alert("Вы согласились."); },
+//     function() { alert("Вы отменили выполнение."); }
+//   );
+
+
+let age = prompt('How old are you?','');
+let welcome;
+if (age < 18) {
+    welcome = function() {
+        alert('Hi');
+    };} 
+    else {
+    welcome = function() {
+        alert('Hellllo');
+    };}
+welcome();
