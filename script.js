@@ -1267,12 +1267,21 @@
 // alert(sum(1, 2));
 
 
-function ask(question, yes, no) {
-    if (confirm(question)) yes()
-    else no();
+// function ask(question, yes, no) {
+//     if (confirm(question)) yes()
+//     else no();
+// }
+// ask (
+//     'Вы согласны?',
+//     () => {alert("Вы согласились");},
+//     () => {alert("Вы отменили выполнение");}
+// );
+
+
+//debugger; - приостановление кода с помощью команды
+
+// чтобы увидеть результат, сначала откройте консоль
+
+for (let i = 0; i < 5; i++) {
+    console.log("value,", i);
 }
-ask (
-    'Вы согласны?',
-    () => {alert("Вы согласились");},
-    () => {alert("Вы отменили выполнение");}
-);
