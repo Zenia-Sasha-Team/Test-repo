@@ -1282,7 +1282,41 @@
 
 // чтобы увидеть результат, сначала откройте консоль
 
-for (let i = 0; i < 5; i++) {
-    console.log("value,", i);
+//                      Task
+//                  переписать читабельный код:
+
+// function pow(x, n) {
+//     let result = 1;
+//     for (let i = 0; i < n; i++) {
+//         result *= x;
+//     }
+//     return result;
+// }
+// let x = prompt('x?','');
+// let n = prompt('n?','');
+// if (n <= 0) {
+//     alert (`something esle`);
+// } else {
+//     alert( pow(x, n) );
+// }
+
+
+//      Behavior Driven Development (BDD)
+
+// describe("pow", function() {
+//     it("возводит в степень n", function() {
+//       assert.equal(pow(2, 3), 8);
+//     });
+//   });
+
+class MyClass {
+    constructor () {
+        console.log("initiate");
+    }
+    add (arg1, arg2) {
+        let result;
+        result = arg1 + arg2;
+        return result;
+    }
 }
-alert(;;)   
+module.exports = MyClass;
