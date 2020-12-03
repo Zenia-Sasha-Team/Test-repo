@@ -2,7 +2,6 @@
 // alert ('Мир')
 // alert (3 + 1+ 2);
 
-
 // alert("Сейчас будет ошибка");
 //      [1,2].forEach(alert)
 
@@ -49,19 +48,19 @@
 // let color = COLOR_ORANGE;
 // alert(color);
 
-                // Task 1 - Working with variables
+// Task 1 - Working with variables
 
 // let name = "Zenia";
 // let admin;
 // admin = name;
 // alert(admin);
 
-                // Task 2 - Giving the right name
+// Task 2 - Giving the right name
 
 // let Earth = "Земля";
 // let currentUserName = "Zenia";
 
-                // Task 3 - Uppercase const
+// Task 3 - Uppercase const
 
 // const BIRTHDAY = '19.12.1989';
 // const age = someCode(BIRTHDAY);
@@ -103,7 +102,7 @@
 // typeof null // "object"
 // typeof alert // "function"
 
- //                       Task - String quotes
+//                       Task - String quotes
 
 // let name = "Zenia";
 // alert(`hello ${1}`) // "hello 1"
@@ -120,7 +119,7 @@
 // let isBoss = confirm("Ты здесь главный?");
 // alert(isBoss);
 
-                        // Task -  A simple page
+// Task -  A simple page
 
 // let nameUser = prompt('What is your name?');
 // alert(`Your name is ${nameUser}`);
@@ -133,7 +132,7 @@
 // value = String(value);
 // alert(typeof value);
 
-// alert(6 / 2);  
+// alert(6 / 2);
 
 // let str = "123";
 // alert(typeof str);
@@ -159,7 +158,6 @@
 // x = -x;
 // alert(x);
 
-
 // let x = 144;
 // alert( x ** (1/2));
 // // alert(x % y);
@@ -169,7 +167,6 @@
 
 // let x = -3;
 // alert(+x);
-
 
 // let apples = "12";
 // let oranges = "3";
@@ -206,7 +203,6 @@
 // alert(a); // 4
 // alert(x); // 5
 
-
 // let a = "" + 1 + 0;   // 10
 // let b = "" - 1 + 0;   // -1
 // let c = true + false; // 1
@@ -217,7 +213,7 @@
 // let h = "4" - 2;      // 2
 // let i = "4px" - 2;    // Nan
 // let j= 7 / 0;         // infinity
-// let k = " -9 " + 5;   // -9 5 
+// let k = " -9 " + 5;   // -9 5
 // let l = " -9 " - 5;   // -14
 // let m = null + 1;     // 1
 // let n = undefined + 1;// Nan
@@ -239,7 +235,6 @@
 // alert(n);
 // alert(o);
 
-
 // alert(2 > 1);
 // alert(2 == 1);
 // alert(2 !=1 );
@@ -254,7 +249,7 @@
 // alert(null == 0) //fasle
 // alert(null >= 0) //true
 
-                        // Task
+// Task
 
 // alert(5 > 4);                   // true
 // alert("ананас" > "яблоко");     // false
@@ -264,12 +259,11 @@
 // alert(null == "\n0\n");         // false
 // alert(null === +"\n0\n");       // false
 
-
 // let year = prompt('В каком году была опубликована что-то там?','');
 // if (year == 2015) {
 //     alert("Вы правы");
 //     alert("вы такой умный !");
-// } 
+// }
 // else {
 //     alert("А вот и не правильно!")
 // }
@@ -277,14 +271,13 @@
 // let year = prompt('В каком году была опубликована что-то там?','');
 // if (year < 2015) {
 //     alert("Это слишком рано !");
-// } else 
+// } else
 // if (year > 2015) {
 //     alert("Это слишком поздно!")
 // }
 // else {
 //     alert("Все верно!")
 // }
-
 
 // let accessAllowed;
 // let age = prompt("How old are you","");
@@ -295,7 +288,6 @@
 // }
 // alert(accessAllowed);
 
-
 // let age = prompt("How old are you","");
 
 // let accessAllowed = (age > 18) ? true : false;
@@ -303,14 +295,13 @@
 //___________________________________________________
 
 // let age = prompt("Возраст?", 18);
-// let message = (age < 3) ? "Здравствуй, малыш!" : 
+// let message = (age < 3) ? "Здравствуй, малыш!" :
 //     (age < 18) ? "Привет!" :
 //     (age < 100) ? "Здравствуйте!" :  "Какой необычный возраст!";
 // alert(message);
 //___________________________________________________
 
-
-                    // Tasks
+// Tasks
 
 // Task 1:
 
@@ -330,16 +321,15 @@
 
 // let result = (a + b < 4) ? "Мало" : "Много";
 
-
 //Task 4
 
 // let message = (login == 'Сотрудник') ? 'Привет' :
-// (login == 'Директор') ? 'Здравствуйте' : 
+// (login == 'Директор') ? 'Здравствуйте' :
 // (login == '') ? 'Нет логина' : '';
- 
-                             //   2.11
 
- //                            result = a || b; //  или
+//   2.11
+
+//                            result = a || b; //  или
 
 // alert(true || true);  //true
 // alert(false || true); //true
@@ -377,9 +367,9 @@
 // false || (x = 1);
 // alert(x); // 1
 
-//                             result = a && b;    // и   
+//                             result = a && b;    // и
 
-//              И -  возвращает первое ложное значение, 
+//              И -  возвращает первое ложное значение,
 //          а ИЛИ –  первое истинное
 
 // alert(true && true);  // true
@@ -421,29 +411,29 @@
 // alert(!true); //false
 // alert(!0); //true
 
-    // alert( !!"non-empty string" ); // true
-    // alert( !!null ); // false
+// alert( !!"non-empty string" ); // true
+// alert( !!null ); // false
 
-    // alert( Boolean("non-empty string") ); // true
-    // alert( Boolean(null) ); // false
+// alert( Boolean("non-empty string") ); // true
+// alert( Boolean(null) ); // false
 
-// то же самое 
+// то же самое
 
 //  ! - приоритет, && - потом, а затем - ||
 
 //                          Tasks
 
-// 1. 
+// 1.
 // alert(null || 2 || undefined); // 2
 
-// 2. 
+// 2.
 // alert(alert(1) || 2 || alert(3)); // 1, (потому что alert(1) - undefined), потом 2
 
 // 3.
 // alert(1 && null && 2); //null
 
 // 4.
-// alert(alert(1) && alert(2)); // 1, 
+// alert(alert(1) && alert(2)); // 1,
 
 // 5.
 // alert(null || 2 && 3 || 4); //2
@@ -485,18 +475,16 @@
 // if (-1 && 0) alert('second');
 // if (null || -1 && 1) alert('third');
 
-    // 9.
+// 9.
 //                          Мой вариант
 
-
 //    let login = prompt('Введите логин','');
-//    let newUser = (login == null) ? alert('Отменено') : 
+//    let newUser = (login == null) ? alert('Отменено') :
 //     (login == 'Админ') ? password = prompt('Введите Пароль') : alert('Я вас не знаю');
 
 //    let answer = (password == null) ? 'Отменено' :
 //     (password == 'Я главный') ? 'Здравствуйте!' :  'Неверный пароль';
 //     alert(answer);
-
 
 //                          Решение в теории
 
@@ -518,13 +506,11 @@
 //   } else {
 //     alert( "Я вас не знаю" );
 //   }
-    
 
 //              2.12 Оператор обьединения с null и "??"
 
 // result = a ?? b;
 // result = (a !== null && a !== undefined) ? a : b;
-
 
 // let user;
 // alert(user ?? "Аноним"); // Аноним
@@ -537,7 +523,6 @@
 //   let nickName = "Суперкодер";
 //   // показывает первое определённое значение:
 //   alert(firstName ?? lastName ?? nickName ?? "Аноним"); // Суперкодер
-
 
 //      Сравнение с || (или)
 
@@ -572,8 +557,6 @@
 // console.log(city.population); // 1100000, а не 200000
 // city.founded ??= 1749;
 // console.log(city.founded); // 1749
-
-
 
 // Для многократного повторения одного участка кода предусмотрены циклы.
 
@@ -640,19 +623,16 @@
 // if (i < 3) { alert(i); i++ }
 // // ...конец, потому что теперь i == 3
 
-
 // let i = 0;
 // for (i = 0; i < 3; i++) { // используем существующую переменную
 //   alert(i); // 0, 1, 2
 // }
 // alert(i); // 3, переменная доступна, т.к. была объявлена снаружи цикла
 
-
 // let i = 0; // мы уже имеем объявленную i с присвоенным значением
 // for (; i < 3; i++) { // нет необходимости в "начале"
 //   alert( i ); // 0, 1, 2
 // }
-
 
 // let i = 0;
 // for (; i < 3;) {
@@ -687,14 +667,12 @@
 //     }
 //   }
 
-
 //                          Метки для break/continue
 
-// labelName: 
+// labelName:
 //   for (...) {
 //     ...
 //   }
-
 
 // for (let i = 0; i < 3; i++) {
 //     for (let j = 0; j < 3; j++) {
@@ -747,7 +725,7 @@
 //     if (i % 2 == 0)
 //     alert(i);
 // }
-// Для проверки на чётность мы здесь используем оператор получения 
+// Для проверки на чётность мы здесь используем оператор получения
 // остатка от деления %
 
 //5.
@@ -828,7 +806,6 @@
 //     alert( "Нет таких значений" );
 // }
 
-
 // let a = "1";
 // let b = 0;
 // switch (+a) {
@@ -838,7 +815,6 @@
 //   default:
 //     alert("Это не выполнится");
 // }
-
 
 // let a = 1;
 // switch (a) {
@@ -853,7 +829,6 @@
 //   default:
 //     alert('Результат выглядит странновато. Честно.');
 // }
-
 
 // let arg = prompt("Введите число?");
 // switch (arg) {
@@ -871,21 +846,19 @@
 //          alert( 'Неизвестное значение' );
 // }
 
-
 //                          Task
 
 // 1.
 // if (browser === 'Edge') {
 //         alert("You've got the Edge");
 // } else if (browser == 'Chrome'
-//     || browser == 'Firefox' 
-//     || browser == 'Safari' 
+//     || browser == 'Firefox'
+//     || browser == 'Safari'
 //     || browser == 'Opera') {
 //     alert('Okay we support these browsers too');
 // } else {
 //     alert ('We hope this page looks ok!');
 // }
-
 
 // 2.
 // let num = +prompt('Введите число между 0 и 3','');
@@ -899,7 +872,7 @@
 //     case '2':
 //     case '3':
 //         alert('Вы ввели число 2, а может и 3');
-//         break 
+//         break
 //     default:
 //         alert('неизвестное значение')
 // }
@@ -910,13 +883,12 @@
 // аналог с одним ! - преобразовать данные к Boolean и инвертировать (например: !0 = true).
 // +'10' + +'10' - сложить строки как числа (в этом примере ответ будет 20).
 
-
 //                      Функции
 
 // function showMessage() {
 //     alert( 'Всем привет!' );
 //   }
-  
+
 // function имя (параметры) {
 //     ...тело...
 // }
@@ -933,7 +905,6 @@
 //     alert(message);
 // }
 // showMessage();
-
 
 // let userName = 'Вася';
 // function showMessage() {
@@ -961,9 +932,7 @@
 // showMessage();
 // alert(userName);
 
-
 //                      Параметры
-
 
 // function showMessage (from, text) {
 //     alert(from + ': ' + text);
@@ -971,14 +940,12 @@
 // showMessage('Аня', 'Привет!');
 // showMessage('Аня', 'как дела?');
 
-
 // function showMessage(from, text) {
 //     from = '*' + from + '*';
 //     alert(from + ': ' + text);
 // }
 // let from = 'Аня';
 // showMessage(from, 'Привет');
-
 
 //                      Параметры по умолчанию
 
@@ -989,23 +956,22 @@
 
 // ПРОВЕРКА НА UNDEFINED:
 
-    // function showMessage(from, text) {
-    //     if (text === undefined) {
-    //         text = 'текст не добавлен';
-    //     }
-    //     alert(from + ': ' + text);
-    // }
-    // showMessage();
+// function showMessage(from, text) {
+//     if (text === undefined) {
+//         text = 'текст не добавлен';
+//     }
+//     alert(from + ': ' + text);
+// }
+// showMessage();
 
 // или с помощью оператора  ||:
 
-    // function showMessage(from, text) {
-    //     text = text || 'текст не добавлен';
-    //     ...
-    // }
+// function showMessage(from, text) {
+//     text = text || 'текст не добавлен';
+//     ...
+// }
 
 //                          Возврат значения
-
 
 // function sum(a, b) {
 //     return a + b;
@@ -1027,7 +993,6 @@
 //     alert('Доступ закрыт');
 // }
 
-
 // function showMovie(age) {
 //     if ( !checkAge(age) ) {
 //       return;
@@ -1037,12 +1002,11 @@
 //   }
 // showMovie();
 
-
 // Результат функции с пустым return или без него – undefined
 // Если функция не возвращает значения, это всё равно, как если бы она возвращала undefined:
 //
-//         function doNothing() { 
-//         /* пусто */ 
+//         function doNothing() {
+//         /* пусто */
 //           }
 //         alert( doNothing() === undefined ); // true
 //
@@ -1053,10 +1017,7 @@
 //           }
 //          alert( doNothing() === undefined ); // true
 
-
-
 //                              Выбор имени функции
-
 
 // Функции, начинающиеся с..
 // "get.." - возвращают значение,
@@ -1069,7 +1030,6 @@
 // calcSum(..)         // вычисляет сумму и возвращает результат
 // createForm(..)      // создаёт форму (и обычно возвращает её)
 // checkPermission(..) // проверяет доступ, возвращая true/false
-
 
 // function showPrimes(n) {
 //     for (let i = 2; i < n; i++) {
@@ -1084,7 +1044,6 @@
 //     return true;
 //   }
 
-
 //                              Tasks
 
 // 1.
@@ -1096,7 +1055,6 @@
 //         return confirm('Родители разрешили?');
 // }
 // checkAge();
-
 
 // 2.
 
@@ -1122,8 +1080,7 @@
 //     return (age > 18) || confirm('Родители разрешили?');
 // }
 
-
-// 3. 
+// 3.
 // // 3.1
 // function min(a, b) {
 //     if (a < b) {
@@ -1137,7 +1094,6 @@
 // function min(a, b) {
 //     return (a < b) ? a : b;
 // }
-
 
 // 4 Функция pow(x,n)
 // let x = prompt('Введите значение Х','');
@@ -1154,8 +1110,6 @@
 // } else {
 //     alert(pow(x, n));
 // }
-
-
 
 //                      Function Expression
 //                      (функциональное выражение)
@@ -1175,7 +1129,6 @@
 //   func(); // Привет    // (3) вызываем копию (работает)!
 //   sayHi(); // Привет   //     прежняя тоже работает (почему бы нет)
 
-
 //                      Функции-"колбэки"
 
 // Давайте напишем функцию ask(question, yes, no) с тремя параметрами:
@@ -1183,7 +1136,6 @@
 // question - Текст вопроса
 // yes - Функция, которая будет вызываться, если ответ будет «Yes»
 // no -Функция, которая будет вызываться, если ответ будет «No»
-
 
 // 'use strict';
 // function ask(question, yes, no) {
@@ -1196,7 +1148,7 @@
 // function showCancel() {
 //     alert('Вы отменили выполнение.');
 // }
-// //// использование: функции showOk, showCancel 
+// //// использование: функции showOk, showCancel
 // //// передаются в качестве аргументов ask
 // ask("Вы согласны?", showOk, showCancel);
 
@@ -1212,32 +1164,25 @@
 //     function() { alert("Вы отменили выполнение."); }
 //   );
 
-
 // let age = prompt('How old are you?','');
 // let welcome;
 // if (age < 18) {
 //     welcome = function() {
 //         alert('Hi');
-//     };} 
+//     };}
 //     else {
 //     welcome = function() {
 //         alert('Hellllo');
 //     };}
 // welcome();
 
-
-
-//                  Функции - стрелки, основы ! 
+//                  Функции - стрелки, основы !
 //                     (arrow functions)
 
-
-
 //    let func = (arg1, arg2, ...argN) => expression
-//          иначе: 
+//          иначе:
 //    let func = function(arg1, arg2, ...argN) {
 //    return expression;}
-
-
 
 // let sum = (a, b) => a + b;
 // alert(sum(1, 2));
@@ -1247,25 +1192,22 @@
 //     return a + b;
 // }
 
-
 // Если нет аргументов, указываются пустые круглые скобки:
 //  let sayHi = () => alert("Hello!");
 //  sayHi();
 
 // like Function Expression:
 // let age = prompt("How old are you?","");
-// let welcome = (age < 18) ? 
-//     () => alert('Hi') : 
+// let welcome = (age < 18) ?
+//     () => alert('Hi') :
 //     () => alert('Helllllo!');
 // welcome();
-
 
 // let sum = (a, b) => {
 //     let result = a + b;
 //     return result;
 // }
 // alert(sum(1, 2));
-
 
 // function ask(question, yes, no) {
 //     if (confirm(question)) yes()
@@ -1276,7 +1218,6 @@
 //     () => {alert("Вы согласились");},
 //     () => {alert("Вы отменили выполнение");}
 // );
-
 
 //debugger; - приостановление кода с помощью команды
 
@@ -1300,7 +1241,6 @@
 //     alert( pow(x, n) );
 // }
 
-
 //      Behavior Driven Development (BDD)
 
 // describe("pow", function() {
@@ -1309,14 +1249,35 @@
 //     });
 //   });
 
+//    TEST for Mocha
+
 class MyClass {
-    constructor () {
-        console.log("initiate");
-    }
-    add (arg1, arg2) {
-        let result;
-        result = arg1 + arg2;
-        return result;
-    }
+  constructor() {
+    console.log("initiate");
+  }
+  add(arg1, arg2) {
+    let result;
+    result = arg1 + arg2;
+    return result;
+  }
 }
-module.exports = MyClass;
+moduleexports = MyClass;
+
+//                Полифилы
+
+// 1.
+// Babel – это транспилер.
+// Он переписывает современный JavaScript -
+// код в предыдущий стандарт.
+
+//                  Start 4.1 (objects)
+
+let kod = 4;
+if (kod < 0) {
+  alert("");
+}
+
+let kod = 4;
+if (kod < 0) {
+  alert("");
+}
