@@ -1251,17 +1251,17 @@
 
 //    TEST for Mocha
 
-class MyClass {
-  constructor() {
-    console.log("initiate");
-  }
-  add(arg1, arg2) {
-    let result;
-    result = arg1 + arg2;
-    return result;
-  }
-}
-moduleexports = MyClass;
+// class MyClass {
+//   constructor() {
+//     console.log("initiate");
+//   }
+//   add(arg1, arg2) {
+//     let result;
+//     result = arg1 + arg2;
+//     return result;
+//   }
+// }
+// moduleexports = MyClass;
 
 //                Полифилы
 
@@ -1272,12 +1272,166 @@ moduleexports = MyClass;
 
 //                  Start 4.1 (objects)
 
-let kod = 4;
-if (kod < 0) {
-  alert("");
-}
+// Пустой объект («пустой ящик») можно создать,
+// используя один из двух вариантов синтаксиса:
+//let user = new Object(); // синтаксис "конструктор обьекта"
+//let user  = {}; // синтаксис "литерал обекта"
+// let user = {
+//   name: "John",
+//   age: 30,
+//   "likes birds": true
+// };
+// alert(user.name);
+// alert(user.age);
 
-let kod = 4;
-if (kod < 0) {
-  alert("");
+// let user = {};
+// user["likes birds"] = true;
+// alert(user["likes birds"]);
+// delete user["likes birds"];
+
+// let user = {
+//   name: "Jonh",
+//   age: 30,
+// };
+// let key = prompt("Что вы хотите узнать от пользователя?", "name");
+// //доступ к свойству через переменную
+// alert(user[key]); //John (если ввели "name")
+
+//      Вычисляемые свойства
+
+// let fruit = prompt("Какой фрукт купить?", "");
+// let bag = {
+//   [fruit]: 5,
+// };
+// alert(bag.orange);
+
+// иначе:
+
+// let fruit = prompt("What?", "apple");
+// let bag = {};
+// bag[fruit] = 5;
+// alert(bag.apple);
+
+//      Свойство из переменной
+
+// function makeUser(name, age) {
+//   return {
+//     name: name,
+//     age: age,
+//   };
+// }
+// let user = makeUser("John", 30);
+// alert(user.name);
+
+//      Ограничения на имена свойств
+
+// эти имена свойств допустимы
+// let obj = {
+//   for: 1,
+//   let: 2,
+//   return: 3,
+// };
+// alert(obj.for + obj.let + obj.return); //6
+
+//    Проверка существования свойства, оператора "in"
+
+// let user = {};
+// alert(user.noSuchProperty === undefined);
+
+// let user = { name: "John", age: 30 };
+// alert( "age" in user ); // true, user.age существует
+// alert( "blabla" in user ); // false, user.blabla не существует
+
+//       Цикл "for..in"
+
+// for (key in object) {
+//   //тело цикла выполнится для каждого свойства обьекта
+// }
+
+// let user = {
+//   name: "John",
+//   age: 30,
+//   isAdmin: true,
+// };
+// for (let prop in user) {
+//   // ключи
+//   alert(prop); //name, age, isAdmin
+//   // значения ключей
+//   alert(user[prop]); //John, 30, true
+// }
+
+// let codes = {
+//   "+49": "",
+//   "+41": "",
+//   "+41": "",
+//   "+1": "",
+// };
+// for (let code in codes) {
+//   alert(+code); //49,41,44,1
+// }
+
+//              Tasks
+
+// 1.
+
+// let user = {
+//   name: "John",
+//   surname: "Smith",
+// };
+// user.name = "Pete";
+// delete user.name;
+
+// 2.
+
+// let schedule = {};
+// function isEmpty(schedule) {
+//   for (let key in schedule) {
+//     //если тело цикла начнет выполняться - значит в обьекте есть свойства
+//     return false;
+//   }
+//   return true;
+// }
+// alert(isEmpty(schedule)); // true
+// schedule["8:30"] = "get up";
+// alert(isEmpty(schedule)); // false
+
+// 3.
+
+// const user = {
+//   name: "John"
+// };
+// user.name = "Pete" // будет работать
+
+// 4.
+
+// let salaries = {
+//   John: 100,
+//   Ann: 160,
+//   Pete: 130,
+// };
+
+// let sum = 0;
+// for (let key in salaries) {
+//   sum = sum + salaries[key];
+// }
+// alert(sum);
+
+// 5.
+
+let menu = {
+  width: 200,
+  height: 300,
+  title: "My menu",
+};
+
+function multiplyNumeric(menu) {
+  for (let key in menu) {
+    if (typeof menu[key] == "number") {
+      menu[key] *= 2;
+    }
+  }
 }
+multiplyNumeric(menu);
+alert(menu.width);
+alert(menu.height);
+alert(menu.title);
