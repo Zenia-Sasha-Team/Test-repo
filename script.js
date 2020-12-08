@@ -1418,20 +1418,73 @@
 
 // 5.
 
-let menu = {
-  width: 200,
-  height: 300,
-  title: "My menu",
-};
+// let menu = {
+//   width: 200,
+//   height: 300,
+//   title: "My menu",
+// };
 
-function multiplyNumeric(menu) {
-  for (let key in menu) {
-    if (typeof menu[key] == "number") {
-      menu[key] *= 2;
-    }
-  }
-}
-multiplyNumeric(menu);
-alert(menu.width);
-alert(menu.height);
-alert(menu.title);
+// function multiplyNumeric(menu) {
+//   for (let key in menu) {
+//     if (typeof menu[key] == "number") {
+//       menu[key] *= 2;
+//     }
+//   }
+// }
+// multiplyNumeric(menu);
+// alert(menu.width);
+// alert(menu.height);
+// alert(menu.title);
+
+//              4.2 Копирование обьектов ссылки
+
+// let user = { name: "Иван" };
+// let admin = user; // копируется ссылка
+// admin.name = "Pete"; //changed
+// alert(user.name); //"Pete"
+
+// let a = {};
+// let b = a;
+// alert(a == b);
+// alert(a === b);
+
+//      Клонирование и обьединение обьектов. Object.assign
+
+// let user = {
+//   name: "Ivan",
+//   age: 30,
+// };
+// let clone = {}; // new empty object
+// // copy all properties in object
+// for (let key in user) {
+//   clone[key] = user[key];
+// }
+// clone.name = "Pete";
+// alert(user.name);
+
+// Синтаксис:
+// Object.assign(dest, [src1, src2, scr3 ...])
+
+// let user = { name: "Ivan" };
+// let permissions1 = {canView: true};
+// let permissions2 = { canEdit: true};
+// // copy all properties from Permissions1 and
+// // Permissions2 in User
+// Object.assign(user, permissions1, permissions2);
+// // теперь user = { name: "Иван",
+// //canView: true, canEdit: true }
+
+let user = {
+  name: "Иван",
+  sizes: {
+    height: 182,
+    width: 50,
+  },
+};
+let clone = Object.assign({}, user);
+alert(user.sizes === clone.sizes); // true, один и тот же объект
+// user и clone обращаются к одному sizes
+user.sizes.width++;
+// меняем свойство в одном объекте
+alert(clone.sizes.width);
+// 51, видим результат в другом объекте
