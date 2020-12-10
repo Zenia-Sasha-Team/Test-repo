@@ -2,7 +2,6 @@
 // alert ('Мир')
 // alert (3 + 1+ 2);
 
-
 // alert("Сейчас будет ошибка");
 //      [1,2].forEach(alert)
 
@@ -49,19 +48,19 @@
 // let color = COLOR_ORANGE;
 // alert(color);
 
-                // Task 1 - Working with variables
+// Task 1 - Working with variables
 
 // let name = "Zenia";
 // let admin;
 // admin = name;
 // alert(admin);
 
-                // Task 2 - Giving the right name
+// Task 2 - Giving the right name
 
 // let Earth = "Земля";
 // let currentUserName = "Zenia";
 
-                // Task 3 - Uppercase const
+// Task 3 - Uppercase const
 
 // const BIRTHDAY = '19.12.1989';
 // const age = someCode(BIRTHDAY);
@@ -103,7 +102,7 @@
 // typeof null // "object"
 // typeof alert // "function"
 
- //                       Task - String quotes
+//                       Task - String quotes
 
 // let name = "Zenia";
 // alert(`hello ${1}`) // "hello 1"
@@ -120,7 +119,7 @@
 // let isBoss = confirm("Ты здесь главный?");
 // alert(isBoss);
 
-                        // Task -  A simple page
+// Task -  A simple page
 
 // let nameUser = prompt('What is your name?');
 // alert(`Your name is ${nameUser}`);
@@ -133,7 +132,7 @@
 // value = String(value);
 // alert(typeof value);
 
-// alert(6 / 2);  
+// alert(6 / 2);
 
 // let str = "123";
 // alert(typeof str);
@@ -159,7 +158,6 @@
 // x = -x;
 // alert(x);
 
-
 // let x = 144;
 // alert( x ** (1/2));
 // // alert(x % y);
@@ -169,7 +167,6 @@
 
 // let x = -3;
 // alert(+x);
-
 
 // let apples = "12";
 // let oranges = "3";
@@ -206,7 +203,6 @@
 // alert(a); // 4
 // alert(x); // 5
 
-
 // let a = "" + 1 + 0;   // 10
 // let b = "" - 1 + 0;   // -1
 // let c = true + false; // 1
@@ -217,7 +213,7 @@
 // let h = "4" - 2;      // 2
 // let i = "4px" - 2;    // Nan
 // let j= 7 / 0;         // infinity
-// let k = " -9 " + 5;   // -9 5 
+// let k = " -9 " + 5;   // -9 5
 // let l = " -9 " - 5;   // -14
 // let m = null + 1;     // 1
 // let n = undefined + 1;// Nan
@@ -239,7 +235,6 @@
 // alert(n);
 // alert(o);
 
-
 // alert(2 > 1);
 // alert(2 == 1);
 // alert(2 !=1 );
@@ -254,7 +249,7 @@
 // alert(null == 0) //fasle
 // alert(null >= 0) //true
 
-                        // Task
+// Task
 
 // alert(5 > 4);                   // true
 // alert("ананас" > "яблоко");     // false
@@ -264,12 +259,11 @@
 // alert(null == "\n0\n");         // false
 // alert(null === +"\n0\n");       // false
 
-
 // let year = prompt('В каком году была опубликована что-то там?','');
 // if (year == 2015) {
 //     alert("Вы правы");
 //     alert("вы такой умный !");
-// } 
+// }
 // else {
 //     alert("А вот и не правильно!")
 // }
@@ -277,14 +271,13 @@
 // let year = prompt('В каком году была опубликована что-то там?','');
 // if (year < 2015) {
 //     alert("Это слишком рано !");
-// } else 
+// } else
 // if (year > 2015) {
 //     alert("Это слишком поздно!")
 // }
 // else {
 //     alert("Все верно!")
 // }
-
 
 // let accessAllowed;
 // let age = prompt("How old are you","");
@@ -295,7 +288,6 @@
 // }
 // alert(accessAllowed);
 
-
 // let age = prompt("How old are you","");
 
 // let accessAllowed = (age > 18) ? true : false;
@@ -303,14 +295,13 @@
 //___________________________________________________
 
 // let age = prompt("Возраст?", 18);
-// let message = (age < 3) ? "Здравствуй, малыш!" : 
+// let message = (age < 3) ? "Здравствуй, малыш!" :
 //     (age < 18) ? "Привет!" :
 //     (age < 100) ? "Здравствуйте!" :  "Какой необычный возраст!";
 // alert(message);
 //___________________________________________________
 
-
-                    // Tasks
+// Tasks
 
 // Task 1:
 
@@ -330,16 +321,15 @@
 
 // let result = (a + b < 4) ? "Мало" : "Много";
 
-
 //Task 4
 
 // let message = (login == 'Сотрудник') ? 'Привет' :
-// (login == 'Директор') ? 'Здравствуйте' : 
+// (login == 'Директор') ? 'Здравствуйте' :
 // (login == '') ? 'Нет логина' : '';
- 
-                             //   2.11
 
- //                            result = a || b; //  или
+//   2.11
+
+//                            result = a || b; //  или
 
 // alert(true || true);  //true
 // alert(false || true); //true
@@ -377,9 +367,9 @@
 // false || (x = 1);
 // alert(x); // 1
 
-//                             result = a && b;    // и   
+//                             result = a && b;    // и
 
-//              И -  возвращает первое ложное значение, 
+//              И -  возвращает первое ложное значение,
 //          а ИЛИ –  первое истинное
 
 // alert(true && true);  // true
@@ -421,29 +411,29 @@
 // alert(!true); //false
 // alert(!0); //true
 
-    // alert( !!"non-empty string" ); // true
-    // alert( !!null ); // false
+// alert( !!"non-empty string" ); // true
+// alert( !!null ); // false
 
-    // alert( Boolean("non-empty string") ); // true
-    // alert( Boolean(null) ); // false
+// alert( Boolean("non-empty string") ); // true
+// alert( Boolean(null) ); // false
 
-// то же самое 
+// то же самое
 
 //  ! - приоритет, && - потом, а затем - ||
 
 //                          Tasks
 
-// 1. 
+// 1.
 // alert(null || 2 || undefined); // 2
 
-// 2. 
+// 2.
 // alert(alert(1) || 2 || alert(3)); // 1, (потому что alert(1) - undefined), потом 2
 
 // 3.
 // alert(1 && null && 2); //null
 
 // 4.
-// alert(alert(1) && alert(2)); // 1, 
+// alert(alert(1) && alert(2)); // 1,
 
 // 5.
 // alert(null || 2 && 3 || 4); //2
@@ -485,18 +475,16 @@
 // if (-1 && 0) alert('second');
 // if (null || -1 && 1) alert('third');
 
-    // 9.
+// 9.
 //                          Мой вариант
 
-
 //    let login = prompt('Введите логин','');
-//    let newUser = (login == null) ? alert('Отменено') : 
+//    let newUser = (login == null) ? alert('Отменено') :
 //     (login == 'Админ') ? password = prompt('Введите Пароль') : alert('Я вас не знаю');
 
 //    let answer = (password == null) ? 'Отменено' :
 //     (password == 'Я главный') ? 'Здравствуйте!' :  'Неверный пароль';
 //     alert(answer);
-
 
 //                          Решение в теории
 
@@ -518,13 +506,11 @@
 //   } else {
 //     alert( "Я вас не знаю" );
 //   }
-    
 
 //              2.12 Оператор обьединения с null и "??"
 
 // result = a ?? b;
 // result = (a !== null && a !== undefined) ? a : b;
-
 
 // let user;
 // alert(user ?? "Аноним"); // Аноним
@@ -537,7 +523,6 @@
 //   let nickName = "Суперкодер";
 //   // показывает первое определённое значение:
 //   alert(firstName ?? lastName ?? nickName ?? "Аноним"); // Суперкодер
-
 
 //      Сравнение с || (или)
 
@@ -572,8 +557,6 @@
 // console.log(city.population); // 1100000, а не 200000
 // city.founded ??= 1749;
 // console.log(city.founded); // 1749
-
-
 
 // Для многократного повторения одного участка кода предусмотрены циклы.
 
@@ -640,19 +623,16 @@
 // if (i < 3) { alert(i); i++ }
 // // ...конец, потому что теперь i == 3
 
-
 // let i = 0;
 // for (i = 0; i < 3; i++) { // используем существующую переменную
 //   alert(i); // 0, 1, 2
 // }
 // alert(i); // 3, переменная доступна, т.к. была объявлена снаружи цикла
 
-
 // let i = 0; // мы уже имеем объявленную i с присвоенным значением
 // for (; i < 3; i++) { // нет необходимости в "начале"
 //   alert( i ); // 0, 1, 2
 // }
-
 
 // let i = 0;
 // for (; i < 3;) {
@@ -687,14 +667,12 @@
 //     }
 //   }
 
-
 //                          Метки для break/continue
 
-// labelName: 
+// labelName:
 //   for (...) {
 //     ...
 //   }
-
 
 // for (let i = 0; i < 3; i++) {
 //     for (let j = 0; j < 3; j++) {
@@ -747,7 +725,7 @@
 //     if (i % 2 == 0)
 //     alert(i);
 // }
-// Для проверки на чётность мы здесь используем оператор получения 
+// Для проверки на чётность мы здесь используем оператор получения
 // остатка от деления %
 
 //5.
@@ -828,7 +806,6 @@
 //     alert( "Нет таких значений" );
 // }
 
-
 // let a = "1";
 // let b = 0;
 // switch (+a) {
@@ -838,7 +815,6 @@
 //   default:
 //     alert("Это не выполнится");
 // }
-
 
 // let a = 1;
 // switch (a) {
@@ -853,7 +829,6 @@
 //   default:
 //     alert('Результат выглядит странновато. Честно.');
 // }
-
 
 // let arg = prompt("Введите число?");
 // switch (arg) {
@@ -871,21 +846,19 @@
 //          alert( 'Неизвестное значение' );
 // }
 
-
 //                          Task
 
 // 1.
 // if (browser === 'Edge') {
 //         alert("You've got the Edge");
 // } else if (browser == 'Chrome'
-//     || browser == 'Firefox' 
-//     || browser == 'Safari' 
+//     || browser == 'Firefox'
+//     || browser == 'Safari'
 //     || browser == 'Opera') {
 //     alert('Okay we support these browsers too');
 // } else {
 //     alert ('We hope this page looks ok!');
 // }
-
 
 // 2.
 // let num = +prompt('Введите число между 0 и 3','');
@@ -899,7 +872,7 @@
 //     case '2':
 //     case '3':
 //         alert('Вы ввели число 2, а может и 3');
-//         break 
+//         break
 //     default:
 //         alert('неизвестное значение')
 // }
@@ -909,3 +882,609 @@
 // !!выражение - преобразовать к Boolean типу.
 // аналог с одним ! - преобразовать данные к Boolean и инвертировать (например: !0 = true).
 // +'10' + +'10' - сложить строки как числа (в этом примере ответ будет 20).
+
+//                      Функции
+
+// function showMessage() {
+//     alert( 'Всем привет!' );
+//   }
+
+// function имя (параметры) {
+//     ...тело...
+// }
+
+// function showMessage() {
+//     alert('Всем привет!');
+// }
+
+// showMessage();
+// showMessage();
+
+// function showMessage() {
+//     let message = 'Привет, я JavaScript!';
+//     alert(message);
+// }
+// showMessage();
+
+// let userName = 'Вася';
+// function showMessage() {
+//     let message = 'Привет, ' + userName;
+//     alert(message);
+// }
+// showMessage();
+
+// let userName = 'Вася';
+// function showMessage() {
+//     userName = 'Петя';
+//     let message = 'Привет, ' + userName;
+//     alert(message);
+// }
+// alert(userName);
+// showMessage();
+// alert(userName);
+
+// let userName = 'Vasya';
+// function showMessage () {
+//     let userName = 'Petya';
+//     let message = 'Privet, ' + userName;
+//     alert(message);
+// }
+// showMessage();
+// alert(userName);
+
+//                      Параметры
+
+// function showMessage (from, text) {
+//     alert(from + ': ' + text);
+// }
+// showMessage('Аня', 'Привет!');
+// showMessage('Аня', 'как дела?');
+
+// function showMessage(from, text) {
+//     from = '*' + from + '*';
+//     alert(from + ': ' + text);
+// }
+// let from = 'Аня';
+// showMessage(from, 'Привет');
+
+//                      Параметры по умолчанию
+
+// function showMessage(from, text = 'текст не добавлен') {
+//     alert(from + ': ' + text);
+// }
+// showMessage('Аня');
+
+// ПРОВЕРКА НА UNDEFINED:
+
+// function showMessage(from, text) {
+//     if (text === undefined) {
+//         text = 'текст не добавлен';
+//     }
+//     alert(from + ': ' + text);
+// }
+// showMessage();
+
+// или с помощью оператора  ||:
+
+// function showMessage(from, text) {
+//     text = text || 'текст не добавлен';
+//     ...
+// }
+
+//                          Возврат значения
+
+// function sum(a, b) {
+//     return a + b;
+// }
+// let result = sum(1, 2);
+// alert(result);             //3
+
+// function checkAge(age) {
+//     if (age > 18) {
+//         return true;
+//     } else {
+//         return confirm('А родители разрешили?');
+//     }
+// }
+// let age  = prompt('Сколько Вам лет?', 18);
+// if ( checkAge(age) ) {
+//     alert('доступ получен');
+// } else {
+//     alert('Доступ закрыт');
+// }
+
+// function showMovie(age) {
+//     if ( !checkAge(age) ) {
+//       return;
+//     }
+//     alert( "Вам показывается кино" ); // (*)
+//     // ...
+//   }
+// showMovie();
+
+// Результат функции с пустым return или без него – undefined
+// Если функция не возвращает значения, это всё равно, как если бы она возвращала undefined:
+//
+//         function doNothing() {
+//         /* пусто */
+//           }
+//         alert( doNothing() === undefined ); // true
+//
+// Пустой return аналогичен return undefined:
+//
+//         function doNothing() {
+//            return;
+//           }
+//          alert( doNothing() === undefined ); // true
+
+//                              Выбор имени функции
+
+// Функции, начинающиеся с..
+// "get.." - возвращают значение,
+// "calc.." - что-то вычисляют,
+// "create.." - что-то создают,
+// "check.." - что-то прверяют и возвращают логичесское значение, и т.д.
+
+// showMessage(..)     // показывает сообщение
+// getAge(..)          // возвращает возраст (в каком либо значении)
+// calcSum(..)         // вычисляет сумму и возвращает результат
+// createForm(..)      // создаёт форму (и обычно возвращает её)
+// checkPermission(..) // проверяет доступ, возвращая true/false
+
+// function showPrimes(n) {
+//     for (let i = 2; i < n; i++) {
+//       if (!isPrime(i)) continue;
+//       alert(i);  // простое
+//     }
+//   }
+//   function isPrime(n) {
+//     for (let i = 2; i < n; i++) {
+//       if ( n % i == 0) return false;
+//     }
+//     return true;
+//   }
+
+//                              Tasks
+
+// 1.
+
+// function checkAge(age) {
+//     if (age > 18) {
+//         return true;
+//     }
+//         return confirm('Родители разрешили?');
+// }
+// checkAge();
+
+// 2.
+
+// //Переписать функцию:
+
+// function checkAge(age) {
+//     if (age > 18) {
+//         return true;
+//     } else {
+//         return confirm('Родители разрешили?')
+//     }
+// }
+
+// // 2.1 (используя оператор ?)
+
+// function checkAge(age) {
+//     return (age > 18) ? true : confirm('Родители разрешили?')
+// }
+
+// // 2.2 (используя оператор  ||)
+
+// function checkAge(age) {
+//     return (age > 18) || confirm('Родители разрешили?');
+// }
+
+// 3.
+// // 3.1
+// function min(a, b) {
+//     if (a < b) {
+//         return a;
+//     } else {
+//         return b;
+//     }
+// }
+
+// // 3.2
+// function min(a, b) {
+//     return (a < b) ? a : b;
+// }
+
+// 4 Функция pow(x,n)
+// let x = prompt('Введите значение Х','');
+// let n = prompt('Введите значение n','');
+// function pow(x, n) {
+//     let result = x;
+//     for (let i = 1; i < n; i++) {
+//         result = result * x;
+//     }
+//     return result;
+// }
+// if (n < 1) {
+//     alert ('степень не поддерживается');
+// } else {
+//     alert(pow(x, n));
+// }
+
+//                      Function Expression
+//                      (функциональное выражение)
+
+// function sayHi() {
+//     alert('Privet');
+// }                      // function declaration (обьявление функции)
+
+// let sayHi = function() {
+//     alert('Privet');
+// };
+
+// function sayHi() {   // (1) создаём
+//     alert( "Privet" );
+//   }
+//   let func = sayHi;    // (2) копируем
+//   func(); // Привет    // (3) вызываем копию (работает)!
+//   sayHi(); // Привет   //     прежняя тоже работает (почему бы нет)
+
+//                      Функции-"колбэки"
+
+// Давайте напишем функцию ask(question, yes, no) с тремя параметрами:
+
+// question - Текст вопроса
+// yes - Функция, которая будет вызываться, если ответ будет «Yes»
+// no -Функция, которая будет вызываться, если ответ будет «No»
+
+// 'use strict';
+// function ask(question, yes, no) {
+//     if (confirm(question)) yes()
+//     else no();
+// }
+// function showOk() {
+//     alert('Вы согласны.');
+// }
+// function showCancel() {
+//     alert('Вы отменили выполнение.');
+// }
+// //// использование: функции showOk, showCancel
+// //// передаются в качестве аргументов ask
+// ask("Вы согласны?", showOk, showCancel);
+
+//                          иначе:
+
+// function ask(question, yes, no) {
+//     if (confirm(question)) yes()
+//     else no();
+//   }
+//   ask(
+//     "Вы согласны?",
+//     function() { alert("Вы согласились."); },
+//     function() { alert("Вы отменили выполнение."); }
+//   );
+
+// let age = prompt('How old are you?','');
+// let welcome;
+// if (age < 18) {
+//     welcome = function() {
+//         alert('Hi');
+//     };}
+//     else {
+//     welcome = function() {
+//         alert('Hellllo');
+//     };}
+// welcome();
+
+//                  Функции - стрелки, основы !
+//                     (arrow functions)
+
+//    let func = (arg1, arg2, ...argN) => expression
+//          иначе:
+//    let func = function(arg1, arg2, ...argN) {
+//    return expression;}
+
+// let sum = (a, b) => a + b;
+// alert(sum(1, 2));
+//          иначе:
+
+// let sum = function(a, b) {
+//     return a + b;
+// }
+
+// Если нет аргументов, указываются пустые круглые скобки:
+//  let sayHi = () => alert("Hello!");
+//  sayHi();
+
+// like Function Expression:
+// let age = prompt("How old are you?","");
+// let welcome = (age < 18) ?
+//     () => alert('Hi') :
+//     () => alert('Helllllo!');
+// welcome();
+
+// let sum = (a, b) => {
+//     let result = a + b;
+//     return result;
+// }
+// alert(sum(1, 2));
+
+// function ask(question, yes, no) {
+//     if (confirm(question)) yes()
+//     else no();
+// }
+// ask (
+//     'Вы согласны?',
+//     () => {alert("Вы согласились");},
+//     () => {alert("Вы отменили выполнение");}
+// );
+
+//debugger; - приостановление кода с помощью команды
+
+// чтобы увидеть результат, сначала откройте консоль
+
+//                      Task
+//                  переписать читабельный код:
+
+// function pow(x, n) {
+//     let result = 1;
+//     for (let i = 0; i < n; i++) {
+//         result *= x;
+//     }
+//     return result;
+// }
+// let x = prompt('x?','');
+// let n = prompt('n?','');
+// if (n <= 0) {
+//     alert (`something esle`);
+// } else {
+//     alert( pow(x, n) );
+// }
+
+//      Behavior Driven Development (BDD)
+
+// describe("pow", function() {
+//     it("возводит в степень n", function() {
+//       assert.equal(pow(2, 3), 8);
+//     });
+//   });
+
+//    TEST for Mocha
+
+// class MyClass {
+//   constructor() {
+//     console.log("initiate");
+//   }
+//   add(arg1, arg2) {
+//     let result;
+//     result = arg1 + arg2;
+//     return result;
+//   }
+// }
+// moduleexports = MyClass;
+
+//                Полифилы
+
+// 1.
+// Babel – это транспилер.
+// Он переписывает современный JavaScript -
+// код в предыдущий стандарт.
+
+//                  Start 4.1 (objects)
+
+// Пустой объект («пустой ящик») можно создать,
+// используя один из двух вариантов синтаксиса:
+//let user = new Object(); // синтаксис "конструктор обьекта"
+//let user  = {}; // синтаксис "литерал обекта"
+// let user = {
+//   name: "John",
+//   age: 30,
+//   "likes birds": true
+// };
+// alert(user.name);
+// alert(user.age);
+
+// let user = {};
+// user["likes birds"] = true;
+// alert(user["likes birds"]);
+// delete user["likes birds"];
+
+// let user = {
+//   name: "Jonh",
+//   age: 30,
+// };
+// let key = prompt("Что вы хотите узнать от пользователя?", "name");
+// //доступ к свойству через переменную
+// alert(user[key]); //John (если ввели "name")
+
+//      Вычисляемые свойства
+
+// let fruit = prompt("Какой фрукт купить?", "");
+// let bag = {
+//   [fruit]: 5,
+// };
+// alert(bag.orange);
+
+// иначе:
+
+// let fruit = prompt("What?", "apple");
+// let bag = {};
+// bag[fruit] = 5;
+// alert(bag.apple);
+
+//      Свойство из переменной
+
+// function makeUser(name, age) {
+//   return {
+//     name: name,
+//     age: age,
+//   };
+// }
+// let user = makeUser("John", 30);
+// alert(user.name);
+
+//      Ограничения на имена свойств
+
+// эти имена свойств допустимы
+// let obj = {
+//   for: 1,
+//   let: 2,
+//   return: 3,
+// };
+// alert(obj.for + obj.let + obj.return); //6
+
+//    Проверка существования свойства, оператора "in"
+
+// let user = {};
+// alert(user.noSuchProperty === undefined);
+
+// let user = { name: "John", age: 30 };
+// alert( "age" in user ); // true, user.age существует
+// alert( "blabla" in user ); // false, user.blabla не существует
+
+//       Цикл "for..in"
+
+// for (key in object) {
+//   //тело цикла выполнится для каждого свойства обьекта
+// }
+
+// let user = {
+//   name: "John",
+//   age: 30,
+//   isAdmin: true,
+// };
+// for (let prop in user) {
+//   // ключи
+//   alert(prop); //name, age, isAdmin
+//   // значения ключей
+//   alert(user[prop]); //John, 30, true
+// }
+
+// let codes = {
+//   "+49": "",
+//   "+41": "",
+//   "+41": "",
+//   "+1": "",
+// };
+// for (let code in codes) {
+//   alert(+code); //49,41,44,1
+// }
+
+//              Tasks
+
+// 1.
+
+// let user = {
+//   name: "John",
+//   surname: "Smith",
+// };
+// user.name = "Pete";
+// delete user.name;
+
+// 2.
+
+// let schedule = {};
+// function isEmpty(schedule) {
+//   for (let key in schedule) {
+//     //если тело цикла начнет выполняться - значит в обьекте есть свойства
+//     return false;
+//   }
+//   return true;
+// }
+// alert(isEmpty(schedule)); // true
+// schedule["8:30"] = "get up";
+// alert(isEmpty(schedule)); // false
+
+// 3.
+
+// const user = {
+//   name: "John"
+// };
+// user.name = "Pete" // будет работать
+
+// 4.
+
+// let salaries = {
+//   John: 100,
+//   Ann: 160,
+//   Pete: 130,
+// };
+
+// let sum = 0;
+// for (let key in salaries) {
+//   sum = sum + salaries[key];
+// }
+// alert(sum);
+
+// 5.
+
+// let menu = {
+//   width: 200,
+//   height: 300,
+//   title: "My menu",
+// };
+
+// function multiplyNumeric(menu) {
+//   for (let key in menu) {
+//     if (typeof menu[key] == "number") {
+//       menu[key] *= 2;
+//     }
+//   }
+// }
+// multiplyNumeric(menu);
+// alert(menu.width);
+// alert(menu.height);
+// alert(menu.title);
+
+//              4.2 Копирование обьектов ссылки
+
+// let user = { name: "Иван" };
+// let admin = user; // копируется ссылка
+// admin.name = "Pete"; //changed
+// alert(user.name); //"Pete"
+
+// let a = {};
+// let b = a;
+// alert(a == b);
+// alert(a === b);
+
+//      Клонирование и обьединение обьектов. Object.assign
+
+// let user = {
+//   name: "Ivan",
+//   age: 30,
+// };
+// let clone = {}; // new empty object
+// // copy all properties in object
+// for (let key in user) {
+//   clone[key] = user[key];
+// }
+// clone.name = "Pete";
+// alert(user.name);
+
+// Синтаксис:
+// Object.assign(dest, [src1, src2, scr3 ...])
+
+// let user = { name: "Ivan" };
+// let permissions1 = {canView: true};
+// let permissions2 = { canEdit: true};
+// // copy all properties from Permissions1 and
+// // Permissions2 in User
+// Object.assign(user, permissions1, permissions2);
+// // теперь user = { name: "Иван",
+// //canView: true, canEdit: true }
+
+let user = {
+  name: "Иван",
+  sizes: {
+    height: 182,
+    width: 50,
+  },
+};
+let clone = Object.assign({}, user);
+alert(user.sizes === clone.sizes); // true, один и тот же объект
+// user и clone обращаются к одному sizes
+user.sizes.width++;
+// меняем свойство в одном объекте
+alert(clone.sizes.width);
+// 51, видим результат в другом объекте
