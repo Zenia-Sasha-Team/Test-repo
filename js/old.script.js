@@ -1474,17 +1474,59 @@
 // // теперь user = { name: "Иван",
 // //canView: true, canEdit: true }
 
-let user = {
-  name: "Иван",
-  sizes: {
-    height: 182,
-    width: 50,
-  },
-};
-let clone = Object.assign({}, user);
-alert(user.sizes === clone.sizes); // true, один и тот же объект
-// user и clone обращаются к одному sizes
-user.sizes.width++;
-// меняем свойство в одном объекте
-alert(clone.sizes.width);
-// 51, видим результат в другом объекте
+// let user = {
+//   name: "Иван",
+//   sizes: {
+//     height: 182,
+//     width: 50,
+//   },
+// };
+// let clone = Object.assign({}, user);
+// alert(user.sizes === clone.sizes); // true, один и тот же объект
+// // user и clone обращаются к одному sizes
+// user.sizes.width++;
+// // меняем свойство в одном объекте
+// alert(clone.sizes.width);
+// // 51, видим результат в другом объекте
+
+//                4.3 Сборка мусора
+//
+//                4.4 Методы обьекта, "this"
+
+// let user = {
+//   name: "John",
+//   age: 30,
+// };
+// user.sayHi = function () {
+//   alert("Hi!");
+// };
+// user.sayHi();
+
+// user = {
+//   sayHi: function () {
+//     alert("Hi!");
+//   },
+// };
+
+// //differently/ otherwise / иначе:
+
+// user = {
+//   sayHi() {
+//     // то же самое, что и "sayHi: function()"
+//     alert("Hi!");
+//   },
+// };
+
+//              this:
+
+// let user = { name: "John" };
+// let admin = { name: "Admin" };
+// function sayHi() {
+//   alert(this.name);
+// }
+
+// user.function = sayHi;
+// admin.function = sayHi;
+// user.function();
+// admin.function(); // одинаково
+// admin["function"](); // одинаково
